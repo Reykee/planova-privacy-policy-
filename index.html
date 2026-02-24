@@ -4,35 +4,41 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Planova</title>
+
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     :root {
-      --indigo:      #6366f1;
+      --indigo: #6366f1;
       --indigo-dark: #4f46e5;
-      --bg:          #f9fafb;
-      --surface:     #ffffff;
-      --text:        #111827;
-      --muted:       #6b7280;
-      --border:      #e5e7eb;
-      --radius:      12px;
+      --bg: #f9fafb;
+      --surface: #ffffff;
+      --text: #111827;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --radius: 12px;
     }
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                   Helvetica, Arial, sans-serif;
+        Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
     }
 
-    /* ── Header ── */
+    /* Header */
     header {
       background: linear-gradient(135deg, var(--indigo-dark) 0%, var(--indigo) 100%);
       color: #fff;
       padding: 60px 24px 48px;
       text-align: center;
     }
+
     .logo-wrap {
       display: inline-flex;
       align-items: center;
@@ -40,23 +46,30 @@
       gap: 12px;
       margin-bottom: 20px;
     }
+
     .logo-icon {
-      width: 52px; height: 52px;
+      width: 52px;
+      height: 52px;
       background: rgba(255,255,255,0.2);
       border-radius: 14px;
-      display: flex; align-items: center; justify-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 26px;
     }
+
     .logo-name {
       font-size: 28px;
       font-weight: 700;
       letter-spacing: -0.5px;
     }
+
     header h1 {
       font-size: clamp(22px, 4vw, 34px);
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     header p.subtitle {
       font-size: 15px;
       opacity: 0.85;
@@ -64,14 +77,12 @@
       margin: 0 auto;
     }
 
-    /* ── Layout ── */
     main {
       max-width: 760px;
       margin: 0 auto;
       padding: 48px 24px 80px;
     }
 
-    /* ── Effective date badge ── */
     .badge {
       display: inline-block;
       background: #eef2ff;
@@ -83,7 +94,6 @@
       margin-bottom: 36px;
     }
 
-    /* ── Highlight box ── */
     .highlight {
       background: #eef2ff;
       border-left: 4px solid var(--indigo);
@@ -95,50 +105,52 @@
       font-weight: 500;
     }
 
-    /* ── Sections ── */
     section {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius);
-      padding: 28px 28px 24px;
+      padding: 28px;
       margin-bottom: 20px;
     }
+
     section h2 {
       font-size: 18px;
       font-weight: 700;
-      color: var(--text);
       margin-bottom: 14px;
       display: flex;
       align-items: center;
       gap: 10px;
     }
+
     section h2 .icon {
-      width: 32px; height: 32px;
+      width: 32px;
+      height: 32px;
       background: #eef2ff;
       border-radius: 8px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-size: 16px;
-      flex-shrink: 0;
     }
+
     section p {
       font-size: 15px;
       color: #374151;
       margin-bottom: 12px;
     }
-    section p:last-child { margin-bottom: 0; }
+
     section ul {
       padding-left: 20px;
       margin-bottom: 12px;
     }
+
     section ul li {
       font-size: 15px;
-      color: #374151;
       margin-bottom: 6px;
+      color: #374151;
     }
 
-    /* ── Contact card ── */
+    /* Contact Card */
     .contact-card {
       background: linear-gradient(135deg, var(--indigo-dark) 0%, var(--indigo) 100%);
       border-radius: var(--radius);
@@ -147,16 +159,19 @@
       text-align: center;
       margin-top: 32px;
     }
+
     .contact-card h2 {
       font-size: 20px;
       font-weight: 700;
       margin-bottom: 10px;
     }
+
     .contact-card p {
       font-size: 15px;
       opacity: 0.9;
       margin-bottom: 20px;
     }
+
     .contact-card a {
       display: inline-block;
       background: rgba(255,255,255,0.2);
@@ -167,11 +182,13 @@
       padding: 10px 24px;
       border-radius: 999px;
       border: 1.5px solid rgba(255,255,255,0.4);
-      transition: background 0.2s;
+      transition: all 0.2s ease;
     }
-    .contact-card a:hover { background: rgba(255,255,255,0.32); }
 
-    /* ── Footer ── */
+    .contact-card a:hover {
+      background: rgba(255,255,255,0.32);
+    }
+
     footer {
       text-align: center;
       padding: 32px 24px;
@@ -179,9 +196,13 @@
       color: var(--muted);
       border-top: 1px solid var(--border);
     }
-    footer strong { color: var(--indigo); }
+
+    footer strong {
+      color: var(--indigo);
+    }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -190,7 +211,7 @@
     <span class="logo-name">Planova</span>
   </div>
   <h1>Privacy Policy</h1>
-  <p class="subtitle">We believe your personal data belongs to you — and only you.</p>
+  <p class="subtitle">Your data belongs to you — and only you.</p>
 </header>
 
 <main>
@@ -201,106 +222,77 @@
     Planova is a fully offline productivity app. We do not collect, store, transmit, or share any personal data. Everything you create stays on your device.
   </div>
 
-  <!-- 1 -->
   <section>
     <h2><span class="icon">📋</span> Overview</h2>
     <p>
-      This Privacy Policy explains how Planova ("we", "our", or "the app") handles information when you use our iOS mobile application. Planova is a task management and goal tracking app designed to work entirely on your device without requiring an internet connection or user account.
-    </p>
-    <p>
-      By using Planova, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.
+      This Privacy Policy explains how Planova ("we", "our", or "the app") handles information when you use our iOS application.
+      Planova is designed to function entirely on your device without requiring an internet connection or user account.
     </p>
   </section>
 
-  <!-- 2 -->
   <section>
     <h2><span class="icon">🔒</span> Information We Do Not Collect</h2>
-    <p>Planova does <strong>not</strong> collect, transmit, or store any of the following:</p>
+    <p>We do not collect, transmit, or store:</p>
     <ul>
-      <li>Personal identifiers (name, email address, phone number)</li>
+      <li>Names, email addresses, or phone numbers</li>
       <li>Location data</li>
       <li>Device identifiers or advertising IDs</li>
-      <li>Usage analytics or crash reports</li>
-      <li>Contacts, calendar events, or photos</li>
-      <li>Any content you create within the app (tasks, goals, notes)</li>
+      <li>Analytics or crash reports</li>
+      <li>Contacts, calendars, or photos</li>
+      <li>Any tasks, notes, or goals created inside the app</li>
     </ul>
-    <p>
-      We do not use any third-party analytics SDKs, advertising networks, or tracking libraries.
-    </p>
   </section>
 
-  <!-- 3 -->
   <section>
-    <h2><span class="icon">📱</span> Data Stored on Your Device</h2>
+    <h2><span class="icon">📱</span> Data Storage</h2>
     <p>
-      All data you create in Planova — including tasks, goals, categories, and settings — is stored exclusively on your device using Apple's local storage (AsyncStorage). This data never leaves your device and is not accessible to us or any third party.
-    </p>
-    <p>
-      If you delete the app, all locally stored data will be permanently removed from your device.
+      All data is stored locally on your device. It is never transmitted to us or any third party.
+      Deleting the app will permanently remove all stored data.
     </p>
   </section>
 
-  <!-- 4 -->
   <section>
-    <h2><span class="icon">🌐</span> Internet Access</h2>
+    <h2><span class="icon">🌐</span> Internet Usage</h2>
     <p>
-      Planova does not require an internet connection to function. The app does not make any network requests, does not connect to external servers, and does not sync data to any cloud service.
+      Planova does not require internet access and does not connect to external servers.
     </p>
   </section>
 
-  <!-- 5 -->
-  <section>
-    <h2><span class="icon">👤</span> No Account Required</h2>
-    <p>
-      Planova does not require you to create an account, sign in, or provide any personal information to use the app. You can start using all features immediately after installation.
-    </p>
-  </section>
-
-  <!-- 6 -->
   <section>
     <h2><span class="icon">🔔</span> Notifications</h2>
     <p>
-      Planova may request permission to send local push notifications to remind you of upcoming tasks and deadlines. These notifications are generated entirely on your device and do not involve any external servers or personal data transmission.
-    </p>
-    <p>
-      You can enable or disable notifications at any time through the app's Settings screen or through your device's iOS Settings.
+      The app may request permission to send local notifications for reminders.
+      These are generated entirely on your device.
     </p>
   </section>
 
-  <!-- 7 -->
   <section>
     <h2><span class="icon">👶</span> Children's Privacy</h2>
     <p>
-      Planova does not collect any personal information from anyone, including children under the age of 13. The app is safe for use by all age groups, as no data is collected or transmitted.
+      Planova does not collect any data from users of any age.
     </p>
   </section>
 
-  <!-- 8 -->
   <section>
-    <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+    <h2><span class="icon">🔄</span> Policy Updates</h2>
     <p>
-      We may update this Privacy Policy from time to time. Any changes will be reflected by updating the "Effective Date" at the top of this page. We encourage you to review this policy periodically.
-    </p>
-    <p>
-      Continued use of Planova after any changes constitutes your acceptance of the updated policy.
+      We may update this policy periodically. Changes will be reflected by updating the effective date above.
     </p>
   </section>
 
-  <!-- Contact -->
   <div class="contact-card">
-    <h2>Questions or Concerns?</h2>
-    <p>
-      If you have any questions about this Privacy Policy or how Planova handles your data, please reach out via our GitHub repository.
-    </p>
-    <a href="reggykilawe@gmail.com" target="_blank" rel="noopener">
-      contact us though the email →
+    <h2>Questions?</h2>
+    <p>If you have any questions about this Privacy Policy, feel free to contact us.</p>
+
+    <a href="mailto:reggykilawe@gmail.com?subject=Planova%20Privacy%20Policy%20Inquiry">
+      Contact via Email →
     </a>
   </div>
 
 </main>
 
 <footer>
-  &copy; 2025 <strong>Planova</strong>. All rights reserved. &nbsp;|&nbsp; Built with privacy in mind.
+  &copy; 2026 <strong>Planova</strong>. All rights reserved. | Built with privacy in mind.
 </footer>
 
 </body>
